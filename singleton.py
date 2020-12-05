@@ -4,6 +4,7 @@ class Singleton:
 
     def __new__(cls,val=None):
         if Singleton.__ins is None:
+            # Create new object if not exists
             Singleton.__ins = object.__new__(cls)
         Singleton.__ins.val = val
         return Singleton.__ins
