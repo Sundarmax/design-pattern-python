@@ -38,7 +38,7 @@ class B(object):
         print('bar')
 
 # classes ordering 
-class C(B,A):
+class C(A,B): # MRO
     def foobar(self):
         self.foo()
         self.bar()
